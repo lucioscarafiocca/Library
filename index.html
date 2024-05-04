@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="father">
+    
+    <div class="main">
+      <div class="child">
+        <p class="big">The Hobbit</p>
+        <p>Written by: J.R.R Tolkien</p>
+        <p>Pages: 295</p>
+        <p>Status: not read</p>
+        <button class="remove"> Remove Book</button>
+      </div>
+
+      <div class="child">
+        <p class="big">The Dome</p>
+        <p>Written by: Sthepen King</p>
+        <p>Pages: 1100</p>
+        <p>Status: read</p>
+        <button class="remove"> Remove Book</button>
+      </div>
+    </div>
+    
+    <button class="but"> 
+      <p> Add Book</p>
+    </button>
+    
+    <dialog>
+      
+      <form>
+        <div>
+          <label for="title"> Title</label>
+          <input class="title" type="text" id="title" name="title" placeholder="Lord of the Rings" required>
+        </div>
+
+        <div>
+          <label for="author">Author</label>
+          <input class="author" type="text" id="author" name="author" required>
+        </div>
+
+        <div>
+          <label for="pages">Pages</label>
+          <input class="pages" type="number" id="pages" name="pages" required >
+       </div>
+          <label for="read">Read</label>
+          <input type="radio" id="read" name="check" value="read" checked>
+        <div>
+
+        <div>
+          <label for="not-read">Not Read</label>
+          <input type="radio" id="not-read" name="check" value="not-read">
+
+        </div>
+        
+        </div>
+
+        <button class="submit"> Submit</button>
+      </form>
+      <button> Close </button>
+    </dialog>
+  </div>
+</body>
+</html>

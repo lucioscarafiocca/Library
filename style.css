@@ -1,0 +1,47 @@
+html {
+    background-color: brown;
+
+}
+
+.father {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.child {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: white;
+    max-width: 500px;
+}
+
+.big {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.big ~ p {
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.but {
+    width: 200px;
+}
+
+.child > button {
+    height: 30px;
+    width: 100px;
+    margin-left: 230px;
+    margin-bottom: 20px;
+}
